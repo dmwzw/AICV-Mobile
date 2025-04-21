@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/dmwzw/AICV-Mobile?style=social)](https://github.com/dmwzw/AICV-Mobile/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+**Author:** [dmwzw](https://github.com/dmwzw) ([1669406579@qq.com](mailto:1669406579@qq.com))
 
 ## 项目简介
 
@@ -174,7 +175,6 @@ app/src/main/
 
 ## 联系方式 📧
 
--   项目维护者: [1669406579@qq.com](mailto:1669406579@qq.com)
 -   项目仓库: [https://github.com/dmwzw/AICV-Mobile](https://github.com/dmwzw/AICV-Mobile)
 
 ---
@@ -184,6 +184,7 @@ app/src/main/
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/dmwzw/AICV-Mobile?style=social)](https://github.com/dmwzw/AICV-Mobile/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+**Author:** [dmwzw](https://github.com/dmwzw) ([1669406579@qq.com](mailto:1669406579@qq.com))
 
 ## Introduction
 
@@ -355,5 +356,4 @@ This project is licensed under the MIT License - see the `LICENSE` file (if avai
 
 ## Contact 📧
 
--   Project Maintainer: [1669406579@qq.com](mailto:1669406579@qq.com)
 -   Project Repository: [https://github.com/dmwzw/AICV-Mobile](https://github.com/dmwzw/AICV-Mobile) 
