@@ -4,6 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/dmwzw/AICV-Mobile?style=social)](https://github.com/dmwzw/AICV-Mobile/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 **Author:** [dmwzw](https://github.com/dmwzw) ([1669406579@qq.com](mailto:1669406579@qq.com))
+**Latest Release:** [AICV-Mobile-V1.0 (Pre-release)](https://github.com/dmwzw/AICV-Mobile/releases/tag/AI)
 
 ## 项目简介
 
@@ -61,7 +62,7 @@ AICV-Mobile 是一个基于YOLOv8和改进版OC-SORT算法的安卓端实时目�
 本项目采用改进版的OC-SORT (Observation-Centric SORT) 思想，并结合卡尔曼滤波器 (Kalman Filter) 进行目标跟踪，以提高精度和鲁棒性：
 
 1.  **预测阶段**：使用卡尔曼滤波预测每个跟踪对象的下一帧状态（位置、速度等）。
-2.  **关联阶段**：计算预测位置与当前帧检测结果之间的关联代价（综合IoU、距离等），并使用匈牙利算法进行匹配。
+2.  **关联阶段**：计算预测位置与当前帧检测结果之间的关联代价（综合IoU、距离等），并使用匈牙利算法或贪婪算法进行匹配。
 3.  **更新阶段**：使用匹配成功的检测结果更新对应跟踪对象的卡尔曼滤波器状态。
 4.  **生命周期管理**：处理未匹配的检测（创建新轨迹）和未匹配的跟踪（标记丢失、删除超时轨迹）。
 
@@ -160,6 +161,9 @@ app/src/main/
 4.  推送到分支 (`git push origin feature/amazing-feature`)
 5.  创建Pull Request
 
+## 许可证 📜
+
+本项目采用 MIT 许可证 - 详情请参见 `LICENSE` 文件 (如果存在)。
 
 ## 致谢 🙏
 
@@ -182,6 +186,7 @@ app/src/main/
 [![GitHub stars](https://img.shields.io/github/stars/dmwzw/AICV-Mobile?style=social)](https://github.com/dmwzw/AICV-Mobile/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 **Author:** [dmwzw](https://github.com/dmwzw) ([1669406579@qq.com](mailto:1669406579@qq.com))
+**Latest Release:** [AICV-Mobile-V1.0 (Pre-release)](https://github.com/dmwzw/AICV-Mobile/releases/tag/AI)
 
 ## Introduction
 
@@ -337,6 +342,10 @@ app/src/main/
 3.  Commit your changes (`git commit -m 'Add some amazing feature'`)
 4.  Push to the branch (`git push origin feature/amazing-feature`)
 5.  Create a Pull Request
+
+## License 📜
+
+This project is licensed under the MIT License - see the `LICENSE` file (if available) for details.
 
 ## Acknowledgements 🙏
 
