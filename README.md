@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/dmwzw/AICV-Mobile?style=social)](https://github.com/dmwzw/AICV-Mobile/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 **Author:** [dmwzw](https://github.com/dmwzw) ([1669406579@qq.com](mailto:1669406579@qq.com))
-**Latest Release:** [AICV-Mobile-V1.0 (Pre-release)](https://github.com/dmwzw/AICV-Mobile/releases/tag/AI)
+**Latest Release Apk Download:** [AICV-Mobile-V1.0 (Pre-release)](https://github.com/dmwzw/AICV-Mobile/releases/tag/AI)
 
 ## 项目简介
 
