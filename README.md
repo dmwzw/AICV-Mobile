@@ -14,7 +14,7 @@
 </div>
 
 <div align="center">
-<b>作者:</b> <a href="https://github.com/dmwzw">dmwzw</a> (<a href="mailto:1669406579@qq.com">1669406579@qq.com</a>)<br>
+<b>作者:</b> <a href="https://github.com/dmwzw">dmwzw</a> (<a href="mailto:zweicumt@163.com">zweicumt@163.com</a>)<br>
 <b>下载:</b> <a href="https://github.com/dmwzw/AICV-Mobile/releases/tag/AI">AICV-Mobile-V1.0 (Pre-release)</a>
 </div>
 
@@ -377,7 +377,7 @@ app/src/main/
 </div>
 
 <div align="center">
-<b>Author:</b> <a href="https://github.com/dmwzw">dmwzw</a> (<a href="mailto:1669406579@qq.com">1669406579@qq.com</a>)<br>
+<b>Author:</b> <a href="https://github.com/dmwzw">dmwzw</a> (<a href="mailto:zweicumt@163.com">zweicumt@163.com</a>)<br>
 <b>Download:</b> <a href="https://github.com/dmwzw/AICV-Mobile/releases/tag/AI">AICV-Mobile-V1.0 (Pre-release)</a>
 </div>
 
