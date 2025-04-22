@@ -29,7 +29,7 @@
 
 ## <img src="https://img.shields.io/badge/-%F0%9F%9A%80%20Introduction-blue?style=for-the-badge&labelColor=black"/> 
 
-> ***AICV-Mobile*** is a **mobile computer vision application** based on YOLOv8 and an improved OC-SORT algorithm, designed and optimized for the Android platform. This project implements efficient object detection, instance segmentation, and object tracking, including mask (segmentation) tracking to follow the shape changes of targets in real-time.
+> ***AICV-Mobile*** AICV-Mobile是一款基于YOLOv8目标检测模型与改进型OC-SORT算法的移动端计算机视觉应用，专为Android平台设计和优化。该项目实现了高效的物体检测、实例分割及目标跟踪功能，其中包含掩码跟踪技术，能够实时追踪目标形态变化。
 
 <details>
 <summary><b>📑 目录 (Table of Contents)</b></summary>
