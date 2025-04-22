@@ -167,9 +167,6 @@
 
 ## <img src="https://img.shields.io/badge/-%E2%9A%99%EF%B8%8F%20%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0-purple?style=for-the-badge&labelColor=black"/>
 
-<div align="center">
-  <img src="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/tracking_mechanism.png" alt="跟踪机理" width="600"/>
-</div>
 
 ### <img src="https://img.shields.io/badge/-目标跟踪机理-01A9DB?style=flat-square&logoColor=white"/> 
 
@@ -459,10 +456,6 @@ app/src/main/
 
 ## <img src="https://img.shields.io/badge/-%F0%9F%93%9C%20%E8%AE%B8%E5%8F%AF%E8%AF%81-yellow?style=for-the-badge&labelColor=black"/>
 
-<div align="center">
-  <p>本项目采用 <a href="https://opensource.org/licenses/MIT">MIT 许可证</a> - 详情请参见 <code>LICENSE</code> 文件（如果存在）。</p>
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="MIT License"/>
-</div>
 
 ## <img src="https://img.shields.io/badge/-%F0%9F%99%8F%20%E8%87%B4%E8%B0%A2-8E44AD?style=for-the-badge&labelColor=black"/>
 
@@ -1193,9 +1186,6 @@ AICV-Mobile is a **mobile computer vision application** based on YOLOv8 and an i
 
 ### Object Tracking Mechanism
 
-<div align="center">
-  <img src="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/tracking_mechanism.png" alt="Tracking Mechanism" width="600"/>
-</div>
 
 This project utilizes concepts from the improved OC-SORT (Observation-Centric SORT) algorithm combined with a Kalman Filter for target tracking, enhancing accuracy and robustness:
 
@@ -1379,9 +1369,7 @@ app/src/main/
   <li>Create a Pull Request</li>
 </ol>
 
-## 📜 License 📜
 
-This project is licensed under the MIT License - see the `LICENSE` file (if available) for details.
 
 ## 🙏 Acknowledgements 🙏
 
