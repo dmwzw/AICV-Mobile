@@ -18,7 +18,7 @@
 <div align="center">
 <b>👨‍💻 作者:</b> <a href="https://github.com/dmwzw">dmwzw</a> (<a href="mailto:zweicumt@163.com">zweicumt@163.com</a>)<br>
 <b>📱 下载:</b> <a href="https://github.com/dmwzw/AICV-Mobile/releases/tag/AI">AICV-Mobile-V1.0 (Pre-release)</a>
- <b>📱 云盘下载:</b> <a href="https://pan.quark.cn/s/859b9db8826d"> Quark</a> 
+ <b>📱 一键下载:</b> <a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/970132439/4ae64a60-c7f4-4242-889e-67349f8e545d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T072636Z&X-Amz-Expires=300&X-Amz-Signature=6ec07e65e506d80150a0c342bd7244cfea1e98b448a682bc52374d5dc876c4f2&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DAICV-Mobile.apk&response-content-type=application%2Fvnd.android.package-archive"> AICV-Mobile</a> 
 </div>
 
 <div align="center">
