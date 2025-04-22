@@ -51,7 +51,7 @@ AICV-Mobile 是一个基于YOLOv8和改进版OC-SORT算法的安卓端实时目�
 
 | 演示 1 | 演示 2 | 演示 3 | 演示 4 |
 | :----: | :----: | :----: | :----: |
-| [![效果演示1](app/demo/1.jpg)](app/demo/1.mp4) | [![效果演示2](app/demo/2.jpg)](app/demo/2.mp4) | [![效果演示3](app/demo/3.jpg)](app/demo/3.mp4) | [![效果演示4](app/demo/4.jpg)](app/demo/4.mp4) |
+| [![效果演示1](app/demo/1.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/1.mp4) | [![效果演示2](app/demo/2.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/2.mp4) | [![效果演示3](app/demo/3.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/3.mp4) | [![效果演示4](app/demo/4.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/4.mp4) |
 
 *点击图片查看对应的演示视频*
 
