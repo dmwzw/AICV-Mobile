@@ -1,5 +1,5 @@
 # <div align="center">🔍 AICV-Mobile 📱</div>
-# <div align="center">🔍 智能视觉跟踪系统 | 安卓端实时目标检测 ((目前仅支持小米机型))</div>
+# <div align="center">🔍 智能视觉跟踪系统 | 安卓端实时目标检测 (目前仅支持小米机型)</div>
 
 <div align="center">
 
