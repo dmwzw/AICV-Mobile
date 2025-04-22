@@ -35,6 +35,7 @@
 
 - [项目简介](#-项目简介)
 - [功能特点](#-功能特点-)
+- [应用场景](#-应用场景-)
 - [效果演示](#-效果演示-)
 - [技术实现](#️-技术实现-)
   - [目标跟踪机理](#目标跟踪机理)
@@ -104,6 +105,37 @@
   <tr>
     <td>🔄 <b>模式切换</b></td>
     <td>支持多种工作模式的实时切换：手持模式、稳定模式、多种运动模式和空间分布模式</td>
+  </tr>
+</table>
+</div>
+
+## <img src="https://img.shields.io/badge/-%F0%9F%9A%A9%20%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF-teal?style=for-the-badge&labelColor=black"/>
+
+<div align="center">
+<table>
+  <tr>
+    <th align="center">📚 场景</th>
+    <th align="center">🔍 应用前景</th>
+  </tr>
+  <tr>
+    <td>⦿ <b>教育培训领域</b></td>
+    <td>这是最直接的应用场景。现在CV课程普遍偏理论，学生难以建立直观认识。AICV-Mobile让学生通过手机就能进行参数调优实验，观察算法行为，理解理论概念。未来可以看到更多高校将其纳入教学工具箱，开发配套教材和实验指南。</td>
+  </tr>
+  <tr>
+    <td>⦿ <b>开发原型验证</b></td>
+    <td>对于想要在产品中融入CV功能的开发者，最大挑战是确定参数配置。现在，他们可以在实际场景中测试不同参数组合，找到最佳配置后再集成到产品中。这大大缩短了开发周期，提高了成功率。</td>
+  </tr>
+  <tr>
+    <td>⦿ <b>行业定制应用</b></td>
+    <td>想象一下，安防公司可以基于这个平台开发专用版本，为安装人员提供现场调试工具；零售企业可以针对客流分析优化参数；交通部门可以针对车辆检测和追踪进行场景适配。未来将看到更多行业定制版本出现。</td>
+  </tr>
+  <tr>
+    <td>⦿ <b>快速可视化验证</b></td>
+    <td>还在实验室熬夜调参数？论文参数落地就翻车？玄学NMS调到怀疑人生？AICV-Mobile提供参数接口，支持各种参数的快速验证，让您直观看到参数变化带来的效果。</td>
+  </tr>
+  <tr>
+    <td>⦿ <b>AI科普与体验</b></td>
+    <td>对于普通大众，AI仍然是个黑盒。AICV-Mobile提供了一个窗口，让人们直观体验AI视觉能力，理解它的工作原理和局限性。未来可以成为AI科普教育的重要工具。</td>
   </tr>
 </table>
 </div>
@@ -558,6 +590,7 @@ AICV-Mobile is a **mobile computer vision application** based on YOLOv8 and an i
 
 - [Introduction](#-introduction)
 - [Features](#-features-)
+- [Application Scenarios](#-application-scenarios-)
 - [Demo Video](#-demo-video-)
 - [Technical Implementation](#️-technical-implementation-)
   - [Object Tracking Mechanism](#object-tracking-mechanism)
@@ -711,6 +744,37 @@ As C++ exception handling is disabled for performance, a multi-layered error han
     <td>At least 2GB RAM</td>
   </tr>
 </table>
+
+## 🚩 Application Scenarios 🚩
+
+<div align="center">
+<table>
+  <tr>
+    <th align="center">📚 Scenario</th>
+    <th align="center">🔍 Application Prospects</th>
+  </tr>
+  <tr>
+    <td>⦿ <b>Education & Training</b></td>
+    <td>This is the most direct application scenario. Current CV courses are generally theoretical, making it difficult for students to build intuitive understanding. AICV-Mobile allows students to conduct parameter optimization experiments on their phones, observe algorithm behavior, and understand theoretical concepts. More universities are expected to incorporate it into their teaching toolkits, developing supporting materials and experimental guides.</td>
+  </tr>
+  <tr>
+    <td>⦿ <b>Development Prototype Verification</b></td>
+    <td>For developers looking to incorporate CV functionality into their products, the biggest challenge is determining parameter configurations. Now, they can test different parameter combinations in real-world scenarios, find the optimal configuration, and then integrate it into their products. This significantly shortens the development cycle and improves success rates.</td>
+  </tr>
+  <tr>
+    <td>⦿ <b>Industry-Specific Applications</b></td>
+    <td>Security companies can develop specialized versions based on this platform to provide installation personnel with on-site debugging tools; retail enterprises can optimize parameters for customer flow analysis; transportation departments can adapt scenarios for vehicle detection and tracking. More industry-customized versions are expected to emerge in the future.</td>
+  </tr>
+  <tr>
+    <td>⦿ <b>Quick Visual Verification</b></td>
+    <td>Still staying up late in the lab tweaking parameters? Research parameters fail when deployed? Mystical NMS tuning driving you crazy? AICV-Mobile provides parameter interfaces that support quick verification of various parameters, allowing you to intuitively see the effects of parameter changes.</td>
+  </tr>
+  <tr>
+    <td>⦿ <b>AI Education & Experience</b></td>
+    <td>For the general public, AI remains a black box. AICV-Mobile provides a window for people to intuitively experience AI vision capabilities, understand its working principles and limitations. It can become an important tool for AI science education in the future.</td>
+  </tr>
+</table>
+</div>
 
 ## 🛠️ Compilation and Installation 🛠️
 
