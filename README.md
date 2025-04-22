@@ -18,8 +18,7 @@
 <div align="center">
 <b>👨‍💻 作者:</b> <a href="https://github.com/dmwzw">dmwzw</a> (<a href="mailto:zweicumt@163.com">zweicumt@163.com</a>)<br>
 <b>📱 下载:</b> <a href="https://github.com/dmwzw/AICV-Mobile/releases/tag/AI">AICV-Mobile-V1.0 (Pre-release)</a>
-<b>📱 云盘下载:</b> <a href="[https://drive.google.com/file/d/1Q_av0Q5W0Cr4pU2vn7oDWsbPONdXc35A/view?usp=sharing]">Drive Google (Pre-release)</a>
-  
+ <b>📱 云盘下载:</b> <a href="https://drive.google.com/file/d/1Q_av0Q5W0Cr4pU2vn7oDWsbPONdXc35A/view?usp=sharing">Drive Google</a> 
 </div>
 
 <div align="center">
