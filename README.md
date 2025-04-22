@@ -1,64 +1,153 @@
-# AICV-Mobile 安卓端实时目标检测app (中文)
+# <div align="center">🔍 AICV-Mobile 📱</div>
+# <div align="center">智能视觉跟踪系统 | 安卓端实时目标检测</div>
+
+<div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/dmwzw/AICV-Mobile?style=social)](https://github.com/dmwzw/AICV-Mobile/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-**Author:** [dmwzw](https://github.com/dmwzw) ([1669406579@qq.com](mailto:1669406579@qq.com))
-**Latest Release Apk Download:** [AICV-Mobile-V1.0 (Pre-release)](https://github.com/dmwzw/AICV-Mobile/releases/tag/AI)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat&logo=yolo&logoColor=black)
+![NCNN](https://img.shields.io/badge/NCNN-deepblue?style=flat)
+![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=flat&logo=opencv&logoColor=white)
 
-## 项目简介
+</div>
 
-AICV-Mobile 是一个基于YOLOv8和改进版OC-SORT算法的安卓端实时目标检测app，专为Android平台设计和优化。本项目实现了高效的目标检测、实例分割及目标跟踪功能，并支持掩码（分割）跟踪，能够实时跟踪目标的形状变化。
+<div align="center">
+<b>作者:</b> <a href="https://github.com/dmwzw">dmwzw</a> (<a href="mailto:1669406579@qq.com">1669406579@qq.com</a>)<br>
+<b>下载:</b> <a href="https://github.com/dmwzw/AICV-Mobile/releases/tag/AI">AICV-Mobile-V1.0 (Pre-release)</a>
+</div>
+
+<p align="center">
+  <img src="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/banner.jpg" alt="AICV-Mobile Banner" width="800"/>
+</p>
+
+---
+
+## 🚀 项目简介
+
+AICV-Mobile 是一个**移动端计算机视觉应用**，基于YOLOv8和改进版OC-SORT算法，专为Android平台设计和优化。本项目实现了高效的目标检测、实例分割及目标跟踪功能，并支持掩码（分割）跟踪，能够实时跟踪目标的形状变化。
 
 <details>
-<summary>目录 (Table of Contents)</summary>
+<summary><b>📑 目录 (Table of Contents)</b></summary>
 
-- [项目简介](#项目简介)
-- [功能特点](#功能特点)
-- [效果演示](#效果演示)
-- [技术实现](#技术实现)
+- [项目简介](#-项目简介)
+- [功能特点](#-功能特点-)
+- [效果演示](#-效果演示-)
+- [技术实现](#️-技术实现-)
   - [目标跟踪机理](#目标跟踪机理)
   - [掩码跟踪机理](#掩码跟踪机理)
   - [错误处理](#错误处理)
-- [系统要求](#系统要求)
-- [编译与安装](#编译与安装)
+- [系统要求](#-系统要求-)
+- [编译与安装](#️-编译与安装-)
   - [前提条件](#前提条件)
   - [编译步骤](#编译步骤)
-- [使用指南](#使用指南)
+- [使用指南](#-使用指南-)
   - [基本使用](#基本使用)
   - [设置选项](#设置选项)
-- [代码结构](#代码结构)
-  - [关键组件 C](#关键组件-c)
-- [贡献指南](#贡献指南)
-- [许可证](#许可证)
-- [致谢](#致谢)
-- [联系方式](#联系方式)
+- [代码结构](#-代码结构-)
+  - [关键组件 C++](#关键组件-c)
+- [贡献指南](#-贡献指南-)
+- [许可证](#-许可证-)
+- [致谢](#-致谢-)
+- [联系方式](#-联系方式-)
 - [English Version](#aicv-mobile-real-time-android-object-detection-app-english)
 
 </details>
 
-## 功能特点 ✨
+## ✨ 功能特点 ✨
 
--   🚀 **高效目标检测**：基于YOLOv8模型，支持COCO数据集80类通用目标检测
--   🎨 **实例分割**：支持物体的精确分割，生成掩码
--   🎯 **目标跟踪**：实现了改进版OC-SORT算法，结合卡尔曼滤波器提高跟踪精度
--   🎭 **掩码跟踪**：能够跟踪目标形状变化，支持掩码预测和时间域平滑
--   🌈 **多样化显示风格**：支持多种检测框、掩码和轨迹的显示风格
--   📈 **轨迹可视化**：可显示目标的运动轨迹线
--   ⚡ **性能优化**：针对移动设备进行了性能优化，禁用C++异常处理
--   🚄 **实时性能**：m模型FPS在10-20左右，n模型FPS可达到30以上
+<table>
+  <tr>
+    <td>🔍 <b>高效目标检测</b></td>
+    <td>基于YOLOv8模型，支持COCO数据集80类通用目标检测</td>
+  </tr>
+  <tr>
+    <td>🎨 <b>实例分割</b></td>
+    <td>支持物体的精确分割，生成高质量掩码</td>
+  </tr>
+  <tr>
+    <td>🎯 <b>目标跟踪</b></td>
+    <td>实现了改进版OC-SORT算法，结合卡尔曼滤波器提高跟踪精度</td>
+  </tr>
+  <tr>
+    <td>🎭 <b>掩码跟踪</b></td>
+    <td>能够跟踪目标形状变化，支持掩码预测和时间域平滑</td>
+  </tr>
+  <tr>
+    <td>🌈 <b>多样化显示风格</b></td>
+    <td>支持多种检测框、掩码和轨迹的显示风格</td>
+  </tr>
+  <tr>
+    <td>📈 <b>轨迹可视化</b></td>
+    <td>可显示目标的运动轨迹线</td>
+  </tr>
+  <tr>
+    <td>⚡ <b>性能优化</b></td>
+    <td>针对移动设备进行了性能优化，禁用C++异常处理</td>
+  </tr>
+  <tr>
+    <td>🚄 <b>实时性能</b></td>
+    <td>m模型FPS在10-20左右，n模型FPS可达到30以上</td>
+  </tr>
+  <tr>
+    <td>🔎 <b>类别筛选</b></td>
+    <td>支持按需启用/禁用特定目标类别的检测，精准识别所需目标</td>
+  </tr>
+  <tr>
+    <td>🔄 <b>模式切换</b></td>
+    <td>支持多种工作模式的实时切换：手持模式、稳定模式、多种运动模式和空间分布模式</td>
+  </tr>
+</table>
 
-## 效果演示 🎬
+## 🎬 效果演示 🎬
 
-| 演示 1 | 演示 2 | 演示 3 | 演示 4 |
-| :----: | :----: | :----: | :----: |
-| [![效果演示1](app/demo/1.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/1.mp4) | [![效果演示2](app/demo/2.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/2.mp4) | [![效果演示3](app/demo/3.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/3.mp4) | [![效果演示4](app/demo/4.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/4.mp4) |
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>演示 1</b></td>
+      <td align="center"><b>演示 2</b></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/1.mp4">
+          <img src="app/demo/1.jpg" width="100%" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/2.mp4">
+          <img src="app/demo/2.jpg" width="100%" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><b>演示 3</b></td>
+      <td align="center"><b>演示 4</b></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/3.mp4">
+          <img src="app/demo/3.jpg" width="100%" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/4.mp4">
+          <img src="app/demo/4.jpg" width="100%" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
-*点击图片查看对应的演示视频*
+<div align="center"><i>点击图片查看对应的演示视频</i></div>
 
-## 技术实现 ⚙️
+## ⚙️ 技术实现 ⚙️
 
 ### 目标跟踪机理
+
+<div align="center">
+  <img src="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/tracking_mechanism.png" alt="跟踪机理" width="600"/>
+</div>
 
 本项目采用改进版的OC-SORT (Observation-Centric SORT) 思想，并结合卡尔曼滤波器 (Kalman Filter) 进行目标跟踪，以提高精度和鲁棒性：
 
@@ -77,39 +166,72 @@ AICV-Mobile 是一个基于YOLOv8和改进版OC-SORT算法的安卓端实时目�
 
 由于项目禁用了C++异常处理以提高性能，采用了多层次的错误处理策略，包括预防性检查、容错机制和日志记录。
 
-## 系统要求 📱
+## 📱 系统要求 📱
 
-- Android 6.0 (API 23) 或更高版本
-- ARMv8 (arm64-v8a) 架构
-- 具有摄像头的设备
-- 至少2GB RAM
+<table>
+  <tr>
+    <td width="200"><b>操作系统</b></td>
+    <td>Android 6.0 (API 23) 或更高版本</td>
+  </tr>
+  <tr>
+    <td><b>处理器架构</b></td>
+    <td>ARMv8 (arm64-v8a)</td>
+  </tr>
+  <tr>
+    <td><b>设备要求</b></td>
+    <td>具有摄像头的设备</td>
+  </tr>
+  <tr>
+    <td><b>内存要求</b></td>
+    <td>至少2GB RAM</td>
+  </tr>
+</table>
 
-## 编译与安装 🛠️
+## 🛠️ 编译与安装 🛠️
 
 ### 前提条件
 
-- Android Studio 4.0+
-- NDK r21+
-- CMake 3.18+
-- OpenCV Mobile 4.6.0
-- NCNN 20230223+
+<table>
+  <tr>
+    <td width="200"><b>开发环境</b></td>
+    <td>Android Studio 4.0+</td>
+  </tr>
+  <tr>
+    <td><b>NDK</b></td>
+    <td>r21+</td>
+  </tr>
+  <tr>
+    <td><b>CMake</b></td>
+    <td>3.18+</td>
+  </tr>
+  <tr>
+    <td><b>OpenCV</b></td>
+    <td>Mobile 4.6.0</td>
+  </tr>
+  <tr>
+    <td><b>NCNN</b></td>
+    <td>20230223+</td>
+  </tr>
+</table>
 
 ### 编译步骤
 
-1.  克隆代码库
-    ```bash
-    git clone https://github.com/your-username/AICV-Mobile.git
-    cd AICV-Mobile
-    ```
-2.  在Android Studio中打开项目
-3.  同步Gradle文件
-4.  编译并安装到设备
-    ```bash
-    ./gradlew assembleDebug
-    adb install -r app/build/outputs/apk/debug/app-debug.apk
-    ```
+<ol>
+  <li>
+    <b>克隆代码库</b>
+    <pre><code>git clone https://github.com/your-username/AICV-Mobile.git
+cd AICV-Mobile</code></pre>
+  </li>
+  <li><b>在Android Studio中打开项目</b></li>
+  <li><b>同步Gradle文件</b></li>
+  <li>
+    <b>编译并安装到设备</b>
+    <pre><code>./gradlew assembleDebug
+adb install -r app/build/outputs/apk/debug/app-debug.apk</code></pre>
+  </li>
+</ol>
 
-## 使用指南 📖
+## 📖 使用指南 📖
 
 ### 基本使用
 
@@ -119,14 +241,42 @@ AICV-Mobile 是一个基于YOLOv8和改进版OC-SORT算法的安卓端实时目�
 
 ### 设置选项
 
--   **检测/显示风格**：选择边界框、文本、掩码和轨迹的显示风格
--   **掩码阈值**：调整分割掩码的阈值
--   **启用/禁用跟踪**：仅进行检测
--   **启用/禁用掩码跟踪**
--   **启用/禁用轨迹显示**：可设置轨迹长度和样式
--   **跟踪模式**：选择不同的跟踪策略（如稳定模式、手持模式等）
+<table>
+  <tr>
+    <td width="200"><b>检测/显示风格</b></td>
+    <td>选择边界框、文本、掩码和轨迹的显示风格</td>
+  </tr>
+  <tr>
+    <td><b>掩码阈值</b></td>
+    <td>调整分割掩码的阈值</td>
+  </tr>
+  <tr>
+    <td><b>启用/禁用跟踪</b></td>
+    <td>仅进行检测</td>
+  </tr>
+  <tr>
+    <td><b>启用/禁用掩码跟踪</b></td>
+    <td>控制是否进行掩码跟踪</td>
+  </tr>
+  <tr>
+    <td><b>启用/禁用轨迹显示</b></td>
+    <td>可设置轨迹长度和样式</td>
+  </tr>
+  <tr>
+    <td><b>类别筛选</b></td>
+    <td>可选择启用或禁用特定类别（如人、车、动物等）的检测</td>
+  </tr>
+  <tr>
+    <td><b>工作模式</b></td>
+    <td>在纯检测模式、检测+跟踪模式、分割+跟踪模式等之间切换</td>
+  </tr>
+  <tr>
+    <td><b>跟踪模式选择</b></td>
+    <td>根据场景选择不同的跟踪策略：手持模式（适合相机移动）、稳定模式（适合固定相机）、运动模式（针对高速目标）、空间分布模式（优化目标密集场景）</td>
+  </tr>
+</table>
 
-## 代码结构 📁
+## 📁 代码结构 📁
 
 ```
 app/src/main/
@@ -148,100 +298,228 @@ app/src/main/
 
 ### 关键组件 (C++)
 
--   `Yolo` 类: 负责模型加载、推理、后处理和结果绘制。
--   `OCSort` 类: 实现基础版 OC-SORT 算法。
--   `EnhancedTracking` 类: 增强版跟踪器，整合卡尔曼滤波和 OC-SORT 思想，支持掩码跟踪。
--   `TrackingParams` 结构体: 定义跟踪参数。
--   `Object` 结构体: 表示检测和跟踪的目标对象。
+<table>
+  <tr>
+    <td width="200"><code>Yolo</code> 类</td>
+    <td>负责模型加载、推理、后处理和结果绘制</td>
+  </tr>
+  <tr>
+    <td><code>OCSort</code> 类</td>
+    <td>实现基础版 OC-SORT 算法</td>
+  </tr>
+  <tr>
+    <td><code>EnhancedTracking</code> 类</td>
+    <td>增强版跟踪器，整合卡尔曼滤波和 OC-SORT 思想，支持掩码跟踪</td>
+  </tr>
+  <tr>
+    <td><code>TrackingParams</code> 结构体</td>
+    <td>定义跟踪参数</td>
+  </tr>
+  <tr>
+    <td><code>Object</code> 结构体</td>
+    <td>表示检测和跟踪的目标对象</td>
+  </tr>
+</table>
 
-## 贡献指南 🙌
+## 🙌 贡献指南 🙌
 
-1.  Fork项目
-2.  创建功能分支 (`git checkout -b feature/amazing-feature`)
-3.  提交更改 (`git commit -m 'Add some amazing feature'`)
-4.  推送到分支 (`git push origin feature/amazing-feature`)
-5.  创建Pull Request
+<ol>
+  <li>Fork项目</li>
+  <li>创建功能分支 (<code>git checkout -b feature/amazing-feature</code>)</li>
+  <li>提交更改 (<code>git commit -m 'Add some amazing feature'</code>)</li>
+  <li>推送到分支 (<code>git push origin feature/amazing-feature</code>)</li>
+  <li>创建Pull Request</li>
+</ol>
 
-## 许可证 📜
+## 📜 许可证 📜
 
-本项目采用 MIT 许可证。
+本项目采用 MIT 许可证 - 详情请参见 `LICENSE` 文件 (如果存在)。
 
-## 致谢 🙏
+## 🙏 致谢 🙏
 
--   [YOLO / Ultralytics](https://github.com/ultralytics/ultralytics)
--   [OC-SORT Paper / Authors](https://arxiv.org/abs/2203.14360)
--   [NCNN / Tencent](https://github.com/Tencent/ncnn)
--   [OpenCV](https://opencv.org/)
--   [ncnn-android-yolov8 / nihui](https://github.com/nihui/ncnn-android-yolov8.git)
--   [OC_SORT_CPP / Postroggy](https://github.com/Postroggy/OC_SORT_CPP.git)
+<table>
+  <tr>
+    <td><a href="https://github.com/ultralytics/ultralytics">YOLO / Ultralytics</a></td>
+    <td>提供了高效的目标检测模型</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2203.14360">OC-SORT Paper / Authors</a></td>
+    <td>提供了先进的跟踪算法思想</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/Tencent/ncnn">NCNN / Tencent</a></td>
+    <td>高性能的神经网络推理框架</td>
+  </tr>
+  <tr>
+    <td><a href="https://opencv.org/">OpenCV</a></td>
+    <td>计算机视觉库</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/nihui/ncnn-android-yolov8.git">ncnn-android-yolov8 / nihui</a></td>
+    <td>NCNN YOLOv8实现参考</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/Postroggy/OC_SORT_CPP.git">OC_SORT_CPP / Postroggy</a></td>
+    <td>OC-SORT C++实现参考</td>
+  </tr>
+</table>
 
-## 联系方式 📧
+## 📧 联系方式 📧
 
 -   项目仓库: [https://github.com/dmwzw/AICV-Mobile](https://github.com/dmwzw/AICV-Mobile)
 
 ---
 
-# AICV-Mobile Real-time Android Object Detection App (English)
+# <div align="center">🔍 AICV-Mobile 📱</div>
+# <div align="center">Real-time Android Object Detection App (English)</div>
+
+<div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/dmwzw/AICV-Mobile?style=social)](https://github.com/dmwzw/AICV-Mobile/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-**Author:** [dmwzw](https://github.com/dmwzw) ([1669406579@qq.com](mailto:1669406579@qq.com))
-**Latest Release:** [AICV-Mobile-V1.0 (Pre-release)](https://github.com/dmwzw/AICV-Mobile/releases/tag/AI)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat&logo=yolo&logoColor=black)
+![NCNN](https://img.shields.io/badge/NCNN-deepblue?style=flat)
+![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=flat&logo=opencv&logoColor=white)
 
-## Introduction
+</div>
 
-AICV-Mobile is an object detection and tracking system based on YOLOv8 and an improved OC-SORT algorithm, designed and optimized for the Android platform. This project implements efficient object detection, instance segmentation, and object tracking, including mask (segmentation) tracking to follow the shape changes of targets in real-time.
+<div align="center">
+<b>Author:</b> <a href="https://github.com/dmwzw">dmwzw</a> (<a href="mailto:1669406579@qq.com">1669406579@qq.com</a>)<br>
+<b>Download:</b> <a href="https://github.com/dmwzw/AICV-Mobile/releases/tag/AI">AICV-Mobile-V1.0 (Pre-release)</a>
+</div>
+
+<p align="center">
+  <img src="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/banner.jpg" alt="AICV-Mobile Banner" width="800"/>
+</p>
+
+---
+
+## 🚀 Introduction
+
+AICV-Mobile is a **mobile computer vision application** based on YOLOv8 and an improved OC-SORT algorithm, designed and optimized for the Android platform. This project implements efficient object detection, instance segmentation, and object tracking, including mask (segmentation) tracking to follow the shape changes of targets in real-time.
 
 <details>
-<summary>Table of Contents</summary>
+<summary><b>📑 Table of Contents</b></summary>
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Demo Video](#demo-video)
-- [Technical Implementation](#technical-implementation)
+- [Introduction](#-introduction)
+- [Features](#-features-)
+- [Demo Video](#-demo-video-)
+- [Technical Implementation](#️-technical-implementation-)
   - [Object Tracking Mechanism](#object-tracking-mechanism)
   - [Mask Tracking Mechanism](#mask-tracking-mechanism)
   - [Error Handling](#error-handling)
-- [System Requirements](#system-requirements)
-- [Compilation and Installation](#compilation-and-installation)
+- [System Requirements](#-system-requirements-)
+- [Compilation and Installation](#️-compilation-and-installation-)
   - [Prerequisites](#prerequisites)
   - [Compilation Steps](#compilation-steps)
-- [Usage Guide](#usage-guide)
+- [Usage Guide](#-usage-guide-)
   - [Basic Usage](#basic-usage)
   - [Settings Options](#settings-options)
-- [Code Structure](#code-structure)
-  - [Key Components C](#key-components-c)
-- [Contribution Guidelines](#contribution-guidelines)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-- [Contact](#contact)
-- [中文版本](#aicv-mobile-安卓端实时目标检测app-中文)
+- [Code Structure](#-code-structure-)
+  - [Key Components C++](#key-components-c)
+- [Contribution Guidelines](#-contribution-guidelines-)
+- [License](#-license-)
+- [Acknowledgements](#-acknowledgements-)
+- [Contact](#-contact-)
+- [中文版本](#-aicv-mobile-)
 
 </details>
 
-## Features ✨
+## ✨ Features ✨
 
--   🚀 **Efficient Object Detection**: Based on the YOLOv8 model, supports detection of 80 common object classes from the COCO dataset.
--   🎨 **Instance Segmentation**: Supports precise object segmentation to generate masks.
--   🎯 **Object Tracking**: Implements an improved OC-SORT algorithm combined with a Kalman filter for enhanced tracking accuracy.
--   🎭 **Mask Tracking**: Capable of tracking target shape changes, supporting mask prediction and temporal smoothing.
--   🌈 **Diverse Display Styles**: Supports various display styles for bounding boxes, masks, and trajectories.
--   📈 **Trajectory Visualization**: Can display the motion paths of targets.
--   ⚡ **Performance Optimization**: Optimized for mobile devices, including disabling C++ exception handling.
--   🚄 **Real-time Performance**: m-model achieves 10-20 FPS, while n-model can exceed 30 FPS.
+<table>
+  <tr>
+    <td>🔍 <b>Efficient Object Detection</b></td>
+    <td>Based on the YOLOv8 model, supports detection of 80 common object classes from the COCO dataset</td>
+  </tr>
+  <tr>
+    <td>🎨 <b>Instance Segmentation</b></td>
+    <td>Supports precise object segmentation to generate high-quality masks</td>
+  </tr>
+  <tr>
+    <td>🎯 <b>Object Tracking</b></td>
+    <td>Implements an improved OC-SORT algorithm combined with a Kalman filter for enhanced tracking accuracy</td>
+  </tr>
+  <tr>
+    <td>🎭 <b>Mask Tracking</b></td>
+    <td>Capable of tracking target shape changes, supporting mask prediction and temporal smoothing</td>
+  </tr>
+  <tr>
+    <td>🌈 <b>Diverse Display Styles</b></td>
+    <td>Supports various display styles for bounding boxes, masks, and trajectories</td>
+  </tr>
+  <tr>
+    <td>📈 <b>Trajectory Visualization</b></td>
+    <td>Can display the motion paths of targets</td>
+  </tr>
+  <tr>
+    <td>⚡ <b>Performance Optimization</b></td>
+    <td>Optimized for mobile devices, including disabling C++ exception handling</td>
+  </tr>
+  <tr>
+    <td>🚄 <b>Real-time Performance</b></td>
+    <td>m-model achieves 10-20 FPS, while n-model can exceed 30 FPS</td>
+  </tr>
+  <tr>
+    <td>🔎 <b>Category Filtering</b></td>
+    <td>Support for enabling/disabling detection of specific object categories as needed</td>
+  </tr>
+  <tr>
+    <td>🔄 <b>Mode Switching</b></td>
+    <td>Real-time switching between multiple working modes: Handheld Mode, Stable Mode, various Motion Modes and Spatial Distribution Mode</td>
+  </tr>
+</table>
 
-## Demo Video 🎬
+## 🎬 Demo Video 🎬
 
-| Demo 1 | Demo 2 | Demo 3 | Demo 4 |
-| :----: | :----: | :----: | :----: |
-| [![Demo Video 1](app/demo/1.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/1.mp4) | [![Demo Video 2](app/demo/2.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/2.mp4) | [![Demo Video 3](app/demo/3.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/3.mp4) | [![Demo Video 4](app/demo/4.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/4.mp4) |
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Demo 1</b></td>
+      <td align="center"><b>Demo 2</b></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/1.mp4">
+          <img src="app/demo/1.jpg" width="100%" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/2.mp4">
+          <img src="app/demo/2.jpg" width="100%" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><b>Demo 3</b></td>
+      <td align="center"><b>Demo 4</b></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/3.mp4">
+          <img src="app/demo/3.jpg" width="100%" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/4.mp4">
+          <img src="app/demo/4.jpg" width="100%" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
-*Click the images to view the corresponding demo videos*
+<div align="center"><i>Click the images to view the corresponding demo videos</i></div>
 
-## Technical Implementation ⚙️
+## ⚙️ Technical Implementation ⚙️
 
 ### Object Tracking Mechanism
+
+<div align="center">
+  <img src="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/tracking_mechanism.png" alt="Tracking Mechanism" width="600"/>
+</div>
 
 This project utilizes concepts from the improved OC-SORT (Observation-Centric SORT) algorithm combined with a Kalman Filter for target tracking, enhancing accuracy and robustness:
 
@@ -260,39 +538,72 @@ This project utilizes concepts from the improved OC-SORT (Observation-Centric SO
 
 As C++ exception handling is disabled for performance, a multi-layered error handling strategy is employed, including preventative checks, fault tolerance mechanisms, and logging.
 
-## System Requirements 📱
+## 📱 System Requirements 📱
 
--   Android 6.0 (API 23) or higher
--   ARMv8 (arm64-v8a) architecture
--   Device with a camera
--   At least 2GB RAM
+<table>
+  <tr>
+    <td width="200"><b>Operating System</b></td>
+    <td>Android 6.0 (API 23) or higher</td>
+  </tr>
+  <tr>
+    <td><b>Processor Architecture</b></td>
+    <td>ARMv8 (arm64-v8a)</td>
+  </tr>
+  <tr>
+    <td><b>Device Requirements</b></td>
+    <td>Device with a camera</td>
+  </tr>
+  <tr>
+    <td><b>Memory</b></td>
+    <td>At least 2GB RAM</td>
+  </tr>
+</table>
 
-## Compilation and Installation 🛠️
+## 🛠️ Compilation and Installation 🛠️
 
 ### Prerequisites
 
--   Android Studio 4.0+
--   NDK r21+
--   CMake 3.18+
--   OpenCV Mobile 4.6.0
--   NCNN 20230223+
+<table>
+  <tr>
+    <td width="200"><b>Development Environment</b></td>
+    <td>Android Studio 4.0+</td>
+  </tr>
+  <tr>
+    <td><b>NDK</b></td>
+    <td>r21+</td>
+  </tr>
+  <tr>
+    <td><b>CMake</b></td>
+    <td>3.18+</td>
+  </tr>
+  <tr>
+    <td><b>OpenCV</b></td>
+    <td>Mobile 4.6.0</td>
+  </tr>
+  <tr>
+    <td><b>NCNN</b></td>
+    <td>20230223+</td>
+  </tr>
+</table>
 
 ### Compilation Steps
 
-1.  Clone the repository
-    ```bash
-    git clone https://github.com/your-username/AICV-Mobile.git
-    cd AICV-Mobile
-    ```
-2.  Open the project in Android Studio
-3.  Sync Gradle files
-4.  Compile and install on the device
-    ```bash
-    ./gradlew assembleDebug
-    adb install -r app/build/outputs/apk/debug/app-debug.apk
-    ```
+<ol>
+  <li>
+    <b>Clone the repository</b>
+    <pre><code>git clone https://github.com/your-username/AICV-Mobile.git
+cd AICV-Mobile</code></pre>
+  </li>
+  <li><b>Open the project in Android Studio</b></li>
+  <li><b>Sync Gradle files</b></li>
+  <li>
+    <b>Compile and install on the device</b>
+    <pre><code>./gradlew assembleDebug
+adb install -r app/build/outputs/apk/debug/app-debug.apk</code></pre>
+  </li>
+</ol>
 
-## Usage Guide 📖
+## 📖 Usage Guide 📖
 
 ### Basic Usage
 
@@ -302,14 +613,42 @@ As C++ exception handling is disabled for performance, a multi-layered error han
 
 ### Settings Options
 
--   **Detection/Display Style**: Choose display styles for bounding boxes, text, masks, and trajectories.
--   **Mask Threshold**: Adjust the threshold for segmentation masks.
--   **Enable/Disable Tracking**: Perform detection only.
--   **Enable/Disable Mask Tracking**.
--   **Enable/Disable Trajectory Display**: Configure trajectory length and style.
--   **Tracking Mode**: Select different tracking strategies (e.g., Stable Mode, Handheld Mode).
+<table>
+  <tr>
+    <td width="200"><b>Detection/Display Style</b></td>
+    <td>Choose display styles for bounding boxes, text, masks, and trajectories</td>
+  </tr>
+  <tr>
+    <td><b>Mask Threshold</b></td>
+    <td>Adjust the threshold for segmentation masks</td>
+  </tr>
+  <tr>
+    <td><b>Enable/Disable Tracking</b></td>
+    <td>Perform detection only</td>
+  </tr>
+  <tr>
+    <td><b>Enable/Disable Mask Tracking</b></td>
+    <td>Control whether to track masks</td>
+  </tr>
+  <tr>
+    <td><b>Enable/Disable Trajectory Display</b></td>
+    <td>Configure trajectory length and style</td>
+  </tr>
+  <tr>
+    <td><b>Category Filtering</b></td>
+    <td>Option to enable or disable detection of specific categories (e.g., person, vehicle, animal)</td>
+  </tr>
+  <tr>
+    <td><b>Working Mode</b></td>
+    <td>Switch between detection-only mode, detection+tracking mode, segmentation+tracking mode, etc.</td>
+  </tr>
+  <tr>
+    <td><b>Tracking Mode Selection</b></td>
+    <td>Choose tracking strategies based on scenarios: Handheld Mode (for moving camera), Stable Mode (for fixed camera), Motion Modes (for high-speed targets), Spatial Distribution Mode (optimized for dense target scenarios)</td>
+  </tr>
+</table>
 
-## Code Structure 📁
+## 📁 Code Structure 📁
 
 ```
 app/src/main/
@@ -331,33 +670,72 @@ app/src/main/
 
 ### Key Components (C++)
 
--   `Yolo` Class: Responsible for model loading, inference, post-processing, and drawing results.
--   `OCSort` Class: Implements the basic OC-SORT algorithm.
--   `EnhancedTracking` Class: Enhanced tracker integrating Kalman filter and OC-SORT concepts, supporting mask tracking.
--   `TrackingParams` Struct: Defines tracking parameters.
--   `Object` Struct: Represents detected and tracked target objects.
+<table>
+  <tr>
+    <td width="200"><code>Yolo</code> Class</td>
+    <td>Responsible for model loading, inference, post-processing, and drawing results</td>
+  </tr>
+  <tr>
+    <td><code>OCSort</code> Class</td>
+    <td>Implements the basic OC-SORT algorithm</td>
+  </tr>
+  <tr>
+    <td><code>EnhancedTracking</code> Class</td>
+    <td>Enhanced tracker integrating Kalman filter and OC-SORT concepts, supporting mask tracking</td>
+  </tr>
+  <tr>
+    <td><code>TrackingParams</code> Struct</td>
+    <td>Defines tracking parameters</td>
+  </tr>
+  <tr>
+    <td><code>Object</code> Struct</td>
+    <td>Represents detected and tracked target objects</td>
+  </tr>
+</table>
 
-## Contribution Guidelines 🙌
+## 🙌 Contribution Guidelines 🙌
 
-1.  Fork the project
-2.  Create a feature branch (`git checkout -b feature/amazing-feature`)
-3.  Commit your changes (`git commit -m 'Add some amazing feature'`)
-4.  Push to the branch (`git push origin feature/amazing-feature`)
-5.  Create a Pull Request
+<ol>
+  <li>Fork the project</li>
+  <li>Create a feature branch (<code>git checkout -b feature/amazing-feature</code>)</li>
+  <li>Commit your changes (<code>git commit -m 'Add some amazing feature'</code>)</li>
+  <li>Push to the branch (<code>git push origin feature/amazing-feature</code>)</li>
+  <li>Create a Pull Request</li>
+</ol>
 
-## License 📜
+## 📜 License 📜
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the `LICENSE` file (if available) for details.
 
-## Acknowledgements 🙏
+## 🙏 Acknowledgements 🙏
 
--   [YOLO / Ultralytics](https://github.com/ultralytics/ultralytics)
--   [OC-SORT Paper / Authors](https://arxiv.org/abs/2203.14360)
--   [NCNN / Tencent](https://github.com/Tencent/ncnn)
--   [OpenCV](https://opencv.org/)
--   [ncnn-android-yolov8 / nihui](https://github.com/nihui/ncnn-android-yolov8.git)
--   [OC_SORT_CPP / Postroggy](https://github.com/Postroggy/OC_SORT_CPP.git)
+<table>
+  <tr>
+    <td><a href="https://github.com/ultralytics/ultralytics">YOLO / Ultralytics</a></td>
+    <td>Providing efficient object detection models</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2203.14360">OC-SORT Paper / Authors</a></td>
+    <td>Providing advanced tracking algorithm concepts</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/Tencent/ncnn">NCNN / Tencent</a></td>
+    <td>High-performance neural network inference framework</td>
+  </tr>
+  <tr>
+    <td><a href="https://opencv.org/">OpenCV</a></td>
+    <td>Computer vision library</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/nihui/ncnn-android-yolov8.git">ncnn-android-yolov8 / nihui</a></td>
+    <td>NCNN YOLOv8 implementation reference</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/Postroggy/OC_SORT_CPP.git">OC_SORT_CPP / Postroggy</a></td>
+    <td>OC-SORT C++ implementation reference</td>
+  </tr>
+</table>
 
-## Contact 📧
+## 📧 Contact 📧
 
--   Project Repository: [https://github.com/dmwzw/AICV-Mobile](https://github.com/dmwzw/AICV-Mobile) 
+-   Project Repository: [https://github.com/dmwzw/AICV-Mobile](https://github.com/dmwzw/AICV-Mobile)
