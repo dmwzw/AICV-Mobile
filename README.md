@@ -325,9 +325,6 @@ app/src/main/
   <li>创建Pull Request</li>
 </ol>
 
-## 📜 许可证 📜
-
-本项目采用 MIT 许可证 - 详情请参见 `LICENSE` 文件 (如果存在)。
 
 ## 🙏 致谢 🙏
 
@@ -691,9 +688,6 @@ app/src/main/
   <li>Create a Pull Request</li>
 </ol>
 
-## 📜 License 📜
-
-This project is licensed under the MIT License - see the `LICENSE` file (if available) for details.
 
 ## 🙏 Acknowledgements 🙏
 
