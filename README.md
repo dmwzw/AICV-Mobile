@@ -28,7 +28,7 @@
 
 ## <img src="https://img.shields.io/badge/-%F0%9F%9A%80%20%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B-blue?style=for-the-badge&labelColor=black"/> 
 
-> ***AICV-Mobile*** 是一个**移动端计算机视觉应用**，基于YOLOv8和改进版OC-SORT算法，专为Android平台设计和优化。本项目实现了高效的目标检测、实例分割及目标跟踪功能，并支持掩码（分割）跟踪，能够实时跟踪目标的形状变化。
+> ***AICV-Mobile*** 是一个**移动端计算机视觉应用**，基于YOLOv8和改进版OC-SORT算法，专为Android平台设计和优化。本项目实现了高效的目标检测、实例分割及目标跟踪功能，并支持掩码（分割）跟踪，能够实时跟踪目标的形状变化。(目前仅支持小米机型)
 
 <details>
 <summary><b>📑 目录 (Table of Contents)</b></summary>
