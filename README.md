@@ -458,7 +458,7 @@ app/src/main/
 ## <img src="https://img.shields.io/badge/-%F0%9F%93%9C%20%E8%AE%B8%E5%8F%AF%E8%AF%81-yellow?style=for-the-badge&labelColor=black"/>
 
 <div align="center">
-  <p>本项目采用 <a href="https://opensource.org/licenses/MIT">MIT 许可证</a> - 详情请参见 <code>LICENSE</code> 文件（如果存在）。</p>
+  <p>本项目采用 <a href="https://opensource.org/licenses/MIT">MIT 许可证</a> </p>
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="MIT License"/>
 </div>
 
@@ -858,7 +858,7 @@ app/src/main/
 
 ## 📜 License 📜
 
-This project is licensed under the MIT License - see the `LICENSE` file (if available) for details.
+This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgements 🙏
 
