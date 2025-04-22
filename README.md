@@ -164,7 +164,7 @@ app/src/main/
 
 ## 许可证 📜
 
-本项目采用 MIT 许可证 - 详情请参见 `LICENSE` 文件 (如果存在)。
+本项目采用 MIT 许可证。
 
 ## 致谢 🙏
 
@@ -347,7 +347,7 @@ app/src/main/
 
 ## License 📜
 
-This project is licensed under the MIT License - see the `LICENSE` file (if available) for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgements 🙏
 
