@@ -142,9 +142,6 @@ AICV-Mobile 是一个**移动端计算机视觉应用**，基于YOLOv8和改进�
 
 ### 目标跟踪机理
 
-<div align="center">
-  <img src="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/tracking_mechanism.png" alt="跟踪机理" width="600"/>
-</div>
 
 本项目采用改进版的OC-SORT (Observation-Centric SORT) 思想，并结合卡尔曼滤波器 (Kalman Filter) 进行目标跟踪，以提高精度和鲁棒性：
 
@@ -511,9 +508,6 @@ AICV-Mobile is a **mobile computer vision application** based on YOLOv8 and an i
 
 ### Object Tracking Mechanism
 
-<div align="center">
-  <img src="https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/tracking_mechanism.png" alt="Tracking Mechanism" width="600"/>
-</div>
 
 This project utilizes concepts from the improved OC-SORT (Observation-Centric SORT) algorithm combined with a Kalman Filter for target tracking, enhancing accuracy and robustness:
 
