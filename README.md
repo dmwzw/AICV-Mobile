@@ -46,6 +46,7 @@ AICV-Mobile 是一个基于YOLOv8和改进版OC-SORT算法的安卓端实时目�
 -   🌈 **多样化显示风格**：支持多种检测框、掩码和轨迹的显示风格
 -   📈 **轨迹可视化**：可显示目标的运动轨迹线
 -   ⚡ **性能优化**：针对移动设备进行了性能优化，禁用C++异常处理
+-   🚄 **实时性能**：m模型FPS在10-20左右，n模型FPS可达到30以上
 
 ## 效果演示 🎬
 
@@ -228,12 +229,13 @@ AICV-Mobile is an object detection and tracking system based on YOLOv8 and an im
 -   🌈 **Diverse Display Styles**: Supports various display styles for bounding boxes, masks, and trajectories.
 -   📈 **Trajectory Visualization**: Can display the motion paths of targets.
 -   ⚡ **Performance Optimization**: Optimized for mobile devices, including disabling C++ exception handling.
+-   🚄 **Real-time Performance**: m-model achieves 10-20 FPS, while n-model can exceed 30 FPS.
 
 ## Demo Video 🎬
 
 | Demo 1 | Demo 2 | Demo 3 | Demo 4 |
 | :----: | :----: | :----: | :----: |
-| [![Demo Video 1](app/demo/1.jpg)](app/demo/1.mp4) | [![Demo Video 2](app/demo/2.jpg)](app/demo/2.mp4) | [![Demo Video 3](app/demo/3.jpg)](app/demo/3.mp4) | [![Demo Video 4](app/demo/4.jpg)](app/demo/4.mp4) |
+| [![Demo Video 1](app/demo/1.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/1.mp4) | [![Demo Video 2](app/demo/2.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/2.mp4) | [![Demo Video 3](app/demo/3.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/3.mp4) | [![Demo Video 4](app/demo/4.jpg)](https://github.com/dmwzw/AICV-Mobile/raw/main/app/demo/4.mp4) |
 
 *Click the images to view the corresponding demo videos*
 
